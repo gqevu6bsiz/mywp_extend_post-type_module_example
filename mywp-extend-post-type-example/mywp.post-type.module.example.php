@@ -21,6 +21,8 @@ final class MywpPostTypeModuleExample extends MywpPostTypeAbstractModule {
       'public' => true,
       'show_ui' => true,
       'supports' => array( 'title' , 'page-attributes' , 'custom-fields' ),
+      'capability_type' => 'post',
+      'map_meta_cap' => true,
     );
 
     return $args;
@@ -62,7 +64,11 @@ final class MywpPostTypeModuleExample extends MywpPostTypeAbstractModule {
 
     }
 
-    if( $column_name == 'field' ) {
+    if( $column_name == 'id' ) {
+
+      echo $post_id;
+
+    } elseif( $column_name == 'field' ) {
 
       echo $mywp_post->example_field;
 
