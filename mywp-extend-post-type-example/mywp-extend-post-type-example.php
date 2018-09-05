@@ -3,12 +3,12 @@
 Plugin Name: My WP Post Type Extends Example
 Plugin URI: https://mywpcustomize.com/document/mywp-post-type-extends-class/
 Description: My WP Post Type Extends Example
-Version: 1.0.1
+Version: 1.0.2
 Author: gqevu6bsiz
 Author URI: http://gqevu6bsiz.chicappa.jp/
-Requires at least: 4.7
-Tested up to: 4.8
-My WP Test working: 1.3
+Text Domain: mywpextend-post-type-example
+Domain Path: /languages
+My WP Test working: 1.7
 */
 
 if ( ! defined( 'ABSPATH' ) ) {

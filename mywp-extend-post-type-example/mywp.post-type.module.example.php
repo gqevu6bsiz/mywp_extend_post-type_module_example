@@ -48,7 +48,7 @@ final class MywpPostTypeModuleExample extends MywpPostTypeAbstractModule {
     $posts_columns['cb'] = $old_columns['cb'];
     $posts_columns['id'] = 'ID';
     $posts_columns['title'] = $old_columns['title'];
-    $posts_columns['field'] = 'Field';
+    $posts_columns['example_field'] = 'Example Field';
 
     return $posts_columns;
 
@@ -68,7 +68,7 @@ final class MywpPostTypeModuleExample extends MywpPostTypeAbstractModule {
 
       echo $post_id;
 
-    } elseif( $column_name == 'field' ) {
+    } elseif( $column_name == 'example_field' ) {
 
       echo $mywp_post->example_field;
 
